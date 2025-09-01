@@ -32,47 +32,65 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
    // fill(255, backEllipse);
    // ellipse(midX, midY, 600);
    
+// stroke(255);
+//    for( let i = 15; i<100; i++){
+//       line(100, i*10, 0, 2*10)
+//    }
+
+   Shape(200,100);
+   Shape(500,680);
+   Shape(300,400);
+   Shape(250,70);
+   Shape(207,300);
+
    
 
-   strokeWeight(7);
-   stroke(150,0,0);
-   //top
-   line(0,0, linePosX, linePosY);
-   line(midX,0, linePosX, linePosY);
-   line(midX*2,0, linePosX, linePosY);
-   //bottom
-   line(0,midY*2, linePosX, linePosY);
-   line(midX,midY*2, linePosX, linePosY);
-   line(midX*2,midY*2, linePosX, linePosY);
+   // strokeWeight(7);
+   // stroke(150,0,0);
+   // //top
+   // line(0,0, linePosX, linePosY);
+   // line(midX,0, linePosX, linePosY);
+   // line(midX*2,0, linePosX, linePosY);
+   // //bottom
+   // line(0,midY*2, linePosX, linePosY);
+   // line(midX,midY*2, linePosX, linePosY);
+   // line(midX*2,midY*2, linePosX, linePosY);
 
-   noStroke();
-   if(drum > 75){
-      rect(midX, midY*2, midX*2, yRect)
+   // noStroke();
+   // if(drum > 75){
+   //    rect(midX, midY*2, midX*2, yRect)
+   // }
+   
+   // stroke(255);
+   // strokeWeight(5);
+   
+   // if(vocal > 75){
+   //    textFont('Impact');
+
+   //    push();
+   //    translate(midX, midY);
+   //       fill(29, 13, 79);
+   //       noStroke();
+   //       rotate(rotRect);
+   //       rect(0,0,rectScale)
+   //    pop();
+
+   // } else if (vocal < 25) {
+      // textFont('Helvetica');
+   // } else {
+   //    textFont('Courier New');
+   // }
+
+
+   // textAlign(CENTER)
+   // textSize(100);
+   // fill(230,200,0);
+   // strokeWeight(0);
+   // text(words, midX, midY);
    }
-   
-   stroke(255);
-   strokeWeight(5);
-   
-   if(vocal > 75){
-      textFont('Impact');
 
-      push();
-      translate(midX, midY);
-         fill(29, 13, 79);
-         noStroke();
-         rotate(rotRect);
-         rect(0,0,rectScale)
-      pop();
+function Shape(x,y){
 
-   } else if (vocal < 25) {
-      textFont('Helvetica');
-   } else {
-      textFont('Courier New');
-   }
+   ellipse(x+20,y-20, 20)
 
-   textAlign(CENTER)
-   textSize(100);
-   fill(230,200,0);
-   strokeWeight(0);
-   text(words, midX, midY);
 }
